@@ -1,6 +1,8 @@
 # Pig Dice
 #### An application for playing a game of pig dice, 30th September 2018
 #### By **Sammy**
+## Link to site
+https://sir-meee.github.io/Pig-Dice/
 ## BDD
  Specification: JavaScript Quiz
   * Input player names
