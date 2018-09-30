@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Pig Dice</title>
 </head>
-<body>
 
+<body>
+   <img src="img/dice.gif"><h1><strong>Pig Dice!</strong></h1>
+
+  <div class="about">
     <h2>Instructions</h2>
     <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
     <ul>
@@ -12,30 +20,62 @@
       <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
       <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
     </ul>
-      <h2>PS</h2>
-      <p>One player can play multiple times in a row or choose to take turns after each round</p>
-      <p><strong>Have fun</strong><p>
-    <button >New Game</button></br>
-    <form>
-            <label for="player1name">Player 1 Name:</label>
-            <input type="text">
-            <label for="player2name">Player 2 Name:</label>
-            <input type="text">
-           <button type="submit">Ready!!</button>
-        </form>
-     <h2 >P1:<span><span></h2>
-            <button >Roll</button>
-            <button >Hold</button>
-          <h2>Dice Roll: <span ></span></h2>
-          <p>Round Total: <span ></span></p>
-          <p>Total Score: <span ></span></p>
-   <h2 >P2:<span ><span></h2>
-            <button >Roll</button>
-            <button >Hold</button>
-          <h2>Dice Roll: <span ></span></h2>
-          <p>Round Total: <span ></span></p>
-          <p>Total Score: <span ></span></p>
+    <h2>PS</h2>
+    <p>One player can play multiple times in a row or choose to take turns after each round</p>
+        <p><strong>Have fun</strong></p>
+  </div>
+  <div class="ng">
+    <button id="newgame">New Game</button></br>
 
- <p><strong>Created by</strong>: Sammy</p>
- </body>
+  </div>
+
+  <div class="container">
+
+  <form id="players">
+          <div class="form-group">
+            <label for="player1name">Player 1 Name:</label>
+            <input id="player1name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="player2name">Player 2 Name:</label>
+            <input id="player2name" class="form-control" type="text">
+          </div>
+              <button id="ready" class="btn-info btn" type="submit">Ready!!</button>
+        </form>
+
+
+<div class="gaming">
+  <div class="row">
+    <div class="col-md-5">
+      <h2 id="title1">P1:<span id ="p1"><span></h2>
+            <button id="p1-roll" class="btn-success btn">Roll</button>
+            <button id="p1-hold" class="btn-success btn">Hold</button>
+          <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+          <p>Round Total: <span id="round-total-1"></span></p>
+          <p>Total Score: <span id="total-score-1"></span></p>
+    </div>
+
+    <div class="col-md-5">
+      <h2 id="title2">P2:<span id ="p2"><span></h2>
+            <button id="p2-roll" class="btn-success btn">Roll</button>
+            <button id="p2-hold" class="btn-success btn">Hold</button>
+          <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+          <p>Round Total: <span id="round-total-2"></span></p>
+          <p>Total Score: <span id="total-score-2"></span></p>
+    </div>
+    <div class="images">
+      <img src="img/1.png" id="onedice">
+      <img src="img/2.png" id="twodice">
+      <img src="img/3.png" id="threedice">
+      <img src="img/4.png" id="fourdice">
+      <img src="img/5.png" id="fivedice">
+      <img src="img/6.png" id="sixdice">
+    </div>
+  </div>
+</div>
+</div>
+<div class="panel-footer">
+<p><strong>Created by</strong>: Sammy</p>
+</div>
+</body>
 </html>
